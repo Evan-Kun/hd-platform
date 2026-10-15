@@ -1,6 +1,6 @@
-# HD Model Platform, published site
+# HD Progression Modelling, published site
 
-This repository holds only the built, static output of the HD Model Platform site and is overwritten on every deploy. Do not edit it by hand: changes are made in the source repository and published from there after its tests pass.
+This repository holds only the built, static output of the HD Progression Modelling site. Its `main` branch is written by the `publish` workflow of the source repository, `hd-platform-source`, on every push to that repository's `main` that touches the site, after lint, types, unit tests, build and the governance scan pass; a ruleset blocks pushes by hand. Each commit names the source commit it was built from. Do not edit or push here: make the change in the source repository and merge it to `main`.
 
 Live site: https://evan-kun.github.io/hd-platform/
 
